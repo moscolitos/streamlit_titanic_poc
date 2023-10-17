@@ -16,7 +16,15 @@ data_manager = DataManager(DATA_PATH)
 
 def main():
     st.title("Titanic Dataset Analysis")
+    
+    st.markdown("""
+    ### Introduction
+    The Titanic dataset captures information about passengers on the RMS Titanic, which infamously sank on its maiden voyage in 1912.
+    This application allows you to explore various aspects of the dataset through visualizations and filters. Dive in to uncover patterns 
+    related to survival rates, fare, age, and more.
+    """)
     st.write("Explore various visualizations and filters based on the Titanic dataset.")
+
 
     # Navigation bar
     nav = st.sidebar.radio("Choose a Visualization:", ["Survival Count", "Survival Rate by Gender",
