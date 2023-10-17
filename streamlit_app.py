@@ -32,14 +32,6 @@ def main():
                                                        "Fare Distribution", "Correlation Heatmap"])
 
     # Filters
-        # Filters
-    col1, col2 = st.sidebar.beta_columns(2)
-    with col1:
-        gender = st.radio("Filter by Gender:", ["All", "male", "female"])
-        age_range = st.slider("Filter by Age Range:", 0, 80, (0, 80))
-    with col2:
-        pclass = st.radio("Filter by Class:", ["All", 1, 2, 3])
-        embarked = st.radio("Filter by Embarked Location:", ["All", "C", "Q", "S"])
     gender = st.sidebar.radio("Filter by Gender:", ["All", "male", "female"])
     pclass = st.sidebar.radio("Filter by Class:", ["All", 1, 2, 3])
     age_range = st.sidebar.slider("Filter by Age Range:", 0, 80, (0, 80))
