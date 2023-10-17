@@ -10,7 +10,9 @@ import streamlit as st
 
 class DataManager:
     def __init__(self, data_path: str):
-        self.data = self.load_data(data_path)
+#        self.data = self.load_data(data_path)
+        self.data = pd.read_csv(data_path)
+
         self.preprocess_data()
 
     @st.cache
