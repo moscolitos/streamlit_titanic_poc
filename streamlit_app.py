@@ -7,7 +7,7 @@ Created on Tue Oct 17 14:09:53 2023
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from data_manager_v1 import DataManager
+from data_manager import DataManager
 
 # Load data
 DATA_PATH = 'data/titanic.csv'
