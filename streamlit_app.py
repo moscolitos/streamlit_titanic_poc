@@ -8,7 +8,7 @@ Created on Tue Oct 17 14:09:53 2023
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
-from data_manager_v1 import DataManager
+from data_manager import DataManager
 
 # Load data
 DATA_PATH = 'data/titanic.csv'
