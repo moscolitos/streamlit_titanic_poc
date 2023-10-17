@@ -6,11 +6,17 @@ Created on Tue Oct 17 14:09:22 2023
 """
 
 import pandas as pd
+import streamlit as st
 
 class DataManager:
     def __init__(self, data_path: str):
-        self.data = pd.read_csv(data_path)
+        self.data = self.load_data(data_path)
         self.preprocess_data()
+
+    @st.cache
+    def load_data(self, data_path):
+        return pd.read_csv(data_path)
+
 
     def preprocess_data(self):
         # Handle missing values (basic handling for simplicity)
